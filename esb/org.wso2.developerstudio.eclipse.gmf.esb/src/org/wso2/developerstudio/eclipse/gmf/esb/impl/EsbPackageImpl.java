@@ -3031,13 +3031,6 @@ public class EsbPackageImpl extends EPackageImpl implements EsbPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum featureBooleanValueEEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EEnum eventTopicTypeEEnum = null;
 
 	/**
@@ -6348,15 +6341,6 @@ public class EsbPackageImpl extends EPackageImpl implements EsbPackage {
 	 */
 	public EAttribute getAbstractBooleanFeature_FeatureEnabled() {
 		return (EAttribute)abstractBooleanFeatureEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getAbstractBooleanFeature_FeatureValue() {
-		return (EAttribute)abstractBooleanFeatureEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -14779,15 +14763,6 @@ public class EsbPackageImpl extends EPackageImpl implements EsbPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getFeatureBooleanValue() {
-		return featureBooleanValueEEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EEnum getEventTopicType() {
 		return eventTopicTypeEEnum;
 	}
@@ -15931,7 +15906,6 @@ public class EsbPackageImpl extends EPackageImpl implements EsbPackage {
 		abstractBooleanFeatureEClass = createEClass(ABSTRACT_BOOLEAN_FEATURE);
 		createEAttribute(abstractBooleanFeatureEClass, ABSTRACT_BOOLEAN_FEATURE__FEATURE_NAME);
 		createEAttribute(abstractBooleanFeatureEClass, ABSTRACT_BOOLEAN_FEATURE__FEATURE_ENABLED);
-		createEAttribute(abstractBooleanFeatureEClass, ABSTRACT_BOOLEAN_FEATURE__FEATURE_VALUE);
 
 		abstractLocationKeyResourceEClass = createEClass(ABSTRACT_LOCATION_KEY_RESOURCE);
 		createEAttribute(abstractLocationKeyResourceEClass, ABSTRACT_LOCATION_KEY_RESOURCE__LOCATION);
@@ -17124,7 +17098,6 @@ public class EsbPackageImpl extends EPackageImpl implements EsbPackage {
 		enrichSourceTypeEEnum = createEEnum(ENRICH_SOURCE_TYPE);
 		enrichTargetActionEEnum = createEEnum(ENRICH_TARGET_ACTION);
 		enrichTargetTypeEEnum = createEEnum(ENRICH_TARGET_TYPE);
-		featureBooleanValueEEnum = createEEnum(FEATURE_BOOLEAN_VALUE);
 		eventTopicTypeEEnum = createEEnum(EVENT_TOPIC_TYPE);
 		entitlementCallbackHandlerEEnum = createEEnum(ENTITLEMENT_CALLBACK_HANDLER);
 		entitlementClientTypeEEnum = createEEnum(ENTITLEMENT_CLIENT_TYPE);
@@ -17956,7 +17929,6 @@ public class EsbPackageImpl extends EPackageImpl implements EsbPackage {
 		initEClass(abstractBooleanFeatureEClass, AbstractBooleanFeature.class, "AbstractBooleanFeature", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAbstractBooleanFeature_FeatureName(), ecorePackage.getEString(), "featureName", "feature_name", 0, 1, AbstractBooleanFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAbstractBooleanFeature_FeatureEnabled(), ecorePackage.getEBoolean(), "featureEnabled", "true", 0, 1, AbstractBooleanFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getAbstractBooleanFeature_FeatureValue(), ecorePackage.getEString(), "featureValue", null, 0, 1, AbstractBooleanFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(abstractLocationKeyResourceEClass, AbstractLocationKeyResource.class, "AbstractLocationKeyResource", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAbstractLocationKeyResource_Location(), ecorePackage.getEString(), "location", "default_location", 0, 1, AbstractLocationKeyResource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -19263,10 +19235,6 @@ public class EsbPackageImpl extends EPackageImpl implements EsbPackage {
 		addEEnumLiteral(enrichTargetTypeEEnum, EnrichTargetType.ENVELOPE);
 		addEEnumLiteral(enrichTargetTypeEEnum, EnrichTargetType.BODY);
 		addEEnumLiteral(enrichTargetTypeEEnum, EnrichTargetType.PROPERTY);
-
-		initEEnum(featureBooleanValueEEnum, FeatureBooleanValue.class, "FeatureBooleanValue");
-		addEEnumLiteral(featureBooleanValueEEnum, FeatureBooleanValue.TRUE);
-		addEEnumLiteral(featureBooleanValueEEnum, FeatureBooleanValue.FALSE);
 
 		initEEnum(eventTopicTypeEEnum, EventTopicType.class, "EventTopicType");
 		addEEnumLiteral(eventTopicTypeEEnum, EventTopicType.STATIC);
