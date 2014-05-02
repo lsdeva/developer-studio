@@ -51,7 +51,7 @@ import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.PartInitException;
 import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.ide.IDE;
-import org.wso2.developerstudio.datamapper.diagram.custom.util.CreateNewConfigurationDialog;
+//import org.wso2.developerstudio.datamapper.diagram.custom.util.CreateNewConfigurationDialog;
 import org.wso2.developerstudio.eclipse.esb.core.EsbConfigurationManager;
 import org.wso2.developerstudio.eclipse.esb.core.interfaces.IEsbEndpoint;
 import org.wso2.developerstudio.eclipse.esb.core.interfaces.IEsbLocalEntry;
@@ -331,7 +331,7 @@ public class DeveloperStudioElementProviderDialog extends Dialog {
 			
 			if (path != null && !path.isEmpty())
 				try {
-					CreateNewConfigurationDialog.createRegistryResourcesForInputScemaAndOutputSchema(fileName, project, path);
+					//CreateNewConfigurationDialog.createRegistryResourcesForInputScemaAndOutputSchema(fileName, project, path);
 				} catch (Exception e) {
 					log.error(e.getMessage());
 				}
@@ -430,7 +430,7 @@ public class DeveloperStudioElementProviderDialog extends Dialog {
 		//FIXME handle this in a proper way
 		try{
 			//NewResourceTemplateDialog newResourceTemplateDialog = new NewResourceTemplateDialog(getParentShell(),(Map<String, List<String>>) getFilters());
-			CreateNewConfigurationDialog newResourceTemplateDialog = new CreateNewConfigurationDialog(getParentShell(),(Map<String, List<String>>) getFilters());
+			/*CreateNewConfigurationDialog newResourceTemplateDialog = new CreateNewConfigurationDialog(getParentShell(),(Map<String, List<String>>) getFilters());
 			newResourceTemplateDialog.create();
 			newResourceTemplateDialog.getShell().setText("New DataMapper Configuration");
 			newResourceTemplateDialog.open();
@@ -438,7 +438,7 @@ public class DeveloperStudioElementProviderDialog extends Dialog {
 				setSelectedPath(newResourceTemplateDialog.getSelectedPath());
 				ipathOfselection = newResourceTemplateDialog.getIPathOfSelection();
 			    this.close();
-			}
+			}*/
 		}finally{
 			
 		}
